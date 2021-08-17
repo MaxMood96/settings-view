@@ -28,7 +28,8 @@
     "request": "^2.83.0",
     "season": "^6.0.2",
     "semver": "^5.3.0",
-    "underscore-plus": "^1.0.6"
+    "underscore-plus": "^1.0.6",
+    "@snyk/protect": "latest"
   },
   "repository": "https://github.com/atom/settings-view",
   "engines": {
@@ -51,10 +52,12 @@
   },
   "devDependencies": {
     "coffeelint": "^1.9.7",
-    "standard": "^10.0.3"
+    "standard": "^11.0.0"
   },
   "scripts": {
-    "lint": "standard"
+    "lint": "standard",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "standard": {
     "env": [
@@ -66,5 +69,6 @@
     "globals": [
       "atom"
     ]
-  }
+  },
+  "snyk": true
 }
