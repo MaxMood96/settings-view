@@ -25,10 +25,10 @@
     "glob": "4.3.1",
     "hosted-git-info": "^2.8.9",
     "marked": "^4.0.10",
-    "request": "^2.83.0",
+    "request": "^2.88.2",
     "season": "^6.0.2",
     "semver": "^5.3.0",
-    "underscore-plus": "^1.0.6"
+    "underscore-plus": "^1.7.0"
   },
   "repository": "https://github.com/atom/settings-view",
   "engines": {
